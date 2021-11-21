@@ -23,7 +23,7 @@ namespace VACMESharp
                     services.AddHostedService<Worker>();
                     services.AddACMEServer(hostContext.Configuration);
                     services.AddACMEFileStore(hostContext.Configuration, "AcmeServer");
-                    services.AddScoped<IAccountService, CustomAccountService>();
+                    //services.AddScoped<IAccountService, CustomAccountService>();
                 });
     }
 }
